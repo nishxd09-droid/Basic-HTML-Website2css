@@ -1,0 +1,348 @@
+body {
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 10px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 700;
+}
+
+html {
+  scroll-padding-top: 80px;
+}
+
+.header-section {
+  border-radius: 15px;
+  background-color: steelblue;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo span {
+  font-size: 20px;
+  font-weight: 600;
+  color: black;
+  transition: color 0.3s;
+}
+
+.logo span:hover {
+  color: white;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+img {
+  height: 50px;
+  width: 50px;
+  background-color: yellow;
+  border-radius: 50%;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  color: black;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: all 0.3s;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 10px;
+  color: white;
+}
+
+/* HERO SECTION */
+
+.hero {
+  border-radius: 15px;
+  text-align: center;
+  padding: 120px 40px;
+  background-color: rgba(10, 67, 86, 0.877);
+  color: white;
+  margin-top: 10px;
+}
+
+.hero h1 {
+  font-size: 56px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+}
+
+.hero p {
+  font-size: 20px;
+  color: lightcyan;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* MAIN content */
+
+.main {
+  border-radius: 15px;
+  text-align: center;
+  background-color: rgba(37, 90, 108, 0.877);
+  margin: 30px auto;
+  margin-top: 10px;
+  max-width: 1200px;
+  display: flex;
+  gap: 30px;
+  padding: 10px 300px 10px 300px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.projects {
+  flex: 1;
+  padding: 10px 40px 10px 40px;
+  border: solid;
+  border-radius: 10px;
+  background-color: rgb(29, 96, 90);
+  color: white;
+}
+
+.work-experience {
+  flex: 1;
+  padding: 10px 40px 10px 40px;
+  border: solid;
+  border-radius: 10px;
+  background-color: rgb(29, 96, 90);
+  color: white;
+}
+
+.education {
+  flex: 1;
+  padding: 10px 40px 10px 40px;
+  border: solid;
+  border-radius: 10px;
+  background-color: rgb(29, 96, 90);
+  color: white;
+}
+
+.projects h2 {
+  font-size: medium;
+  margin-bottom: 20px;
+  border-bottom: solid;
+  padding-bottom: 5px;
+}
+
+.projects li {
+  border-radius: 15px;
+  padding: 12px 15px;
+  margin-bottom: 10px;
+  border-bottom: 4px solid black;
+  padding-left: 15px;
+  background-color: rgba(13, 186, 186, 0.78);
+  color: black;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.work-experience h2 {
+  font-size: medium;
+  margin-bottom: 20px;
+  border-bottom: solid;
+  padding-bottom: 5px;
+}
+
+.roadmap {
+  background-color: rgba(13, 186, 186, 0.78);
+  color: black;
+  padding: 10px 40px 10px 40px;
+  margin-bottom: 10px;
+  border-bottom: 4px solid black;
+  border-radius: 15px;
+}
+
+.opensource {
+  background-color: rgba(13, 186, 186, 0.78);
+  color: black;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-bottom: 4px solid black;
+  border-radius: 15px;
+}
+
+.roadmap h3 {
+  font-weight: bold;
+  background-color: black;
+  border-radius: 25px;
+  border-bottom: solid;
+  color: white;
+}
+
+.work-experience h3 {
+  background-color: black;
+  border-radius: 25px;
+  border-bottom: solid;
+  color: white;
+}
+
+.text h2 {
+  font-size: medium;
+  margin-bottom: 20px;
+  border-bottom: solid;
+  padding-bottom: 5px;
+}
+
+.text p {
+  background-color: rgba(13, 186, 186, 0.78);
+  color: black;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-bottom: 4px solid black;
+  border-radius: 15px;
+}
+
+.lists h3 {
+  font-size: medium;
+  margin-bottom: 20px;
+  border-bottom: solid;
+  padding-bottom: 5px;
+}
+
+.lists li {
+ border-radius: 15px;
+  padding: 12px 15px;
+  margin-bottom: 10px;
+  border-bottom: 4px solid black;
+  padding-left: 15px;
+  background-color: rgba(13, 186, 186, 0.78);
+  color: black;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.projects ul,
+.lists ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.roadmap a {
+  color: darkviolet;
+  text-decoration: none;
+  border-bottom: solid black;
+}
+
+.roadmap a:hover {
+  color: red;
+}
+
+.opensource a {
+  color: darkviolet;
+  text-decoration: none;
+  border-bottom: solid black;
+}
+
+.opensource a:hover {
+  color: red;
+}
+
+.testimonials {
+  border-radius: 15px;
+  background-color: rgba(10, 67, 86, 0.877);
+  flex-direction: column;
+  margin: 40px 0;
+  color: white;
+  display: flex;
+  gap: 20px;
+  padding: 10px;
+}
+
+.testimonials h2 {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.review1 {
+  flex: 1;
+  padding: 20px;
+  border: solid white;
+  border-radius: 30px;
+  background-color: lightblue;
+  color: black;
+  position: relative;
+}
+
+.review1 p {
+  font-style: italic;
+  font-size: smaller;
+}
+
+.review2 {
+  flex: 1;
+  padding: 20px;
+  border: solid white;
+  border-radius: 30px;
+  background-color: lightblue;
+  color: black;
+  position: relative;
+}
+
+.review2 p {
+  font-style: italic;
+  font-size: smaller;
+}
+
+.review3 {
+  flex: 1;
+  padding: 20px;
+  border: solid white;
+  border-radius: 30px;
+  background-color: lightblue;
+  color: black;
+  position: relative;
+}
+
+.review3 p {
+  font-style: italic;
+  font-size: smaller;
+}
+
+.testimonials footer {
+  text-align: center;
+  padding: 5px;
+  border-top: 2px solid;
+}
+
+.last {
+  margin-top: 40px;
+}
+
+.last p {
+  text-align: center;
+  border-radius: 10px;
+  padding: 12px;
+  background-color: rgba(37, 90, 108, 0.877);
+  font-size: small;
+  margin-top: 2px;
+}
