@@ -48,11 +48,12 @@ html {
   gap: 10px;
 }
 
-img {
+.logo img {
   height: 50px;
   width: 50px;
   background-color: yellow;
   border-radius: 50%;
+  object-fit: cover;
 }
 
 .nav-links {
@@ -75,6 +76,17 @@ img {
   background-color: rgba(255, 255, 255, 0.2);
   padding: 10px;
   color: white;
+}
+
+a:focus,
+button:focus {
+  outline: 2px solid #fff;
+  outline-offset: 2px;
+}
+
+.nav-links a {
+  transition: all 0.3s;
+  will-change: background-color, color;  
 }
 
 /* HERO SECTION */
@@ -114,8 +126,20 @@ img {
   max-width: 1200px;
   display: flex;
   gap: 30px;
-  padding: 10px 300px 10px 300px;
+  padding: 20px;
+  flex-wrap: wrap; 
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .main {
+    flex-direction: column;
+    padding: 10px;
+  }
+  
+  .hero h1 {
+    font-size: 32px;  /* Smaller on mobile */
+  }
 }
 
 .projects {
@@ -266,15 +290,25 @@ img {
   color: red;
 }
 
+/* Reviews */
+
 .testimonials {
   border-radius: 15px;
   background-color: rgba(10, 67, 86, 0.877);
-  flex-direction: column;
-  margin: 40px 0;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 10px 0 10px; 
   color: white;
   display: flex;
   gap: 20px;
-  padding: 10px;
+  padding: 40px 20px;
+  align-items: stretch;
+}
+
+@media (max-width: 768px) {
+  .testimonials {
+    flex-direction: column; 
+  }
 }
 
 .testimonials h2 {
@@ -283,66 +317,61 @@ img {
   margin-bottom: 20px;
 }
 
-.review1 {
+.testimonials article {
   flex: 1;
+  min-width: 280px;  
   padding: 20px;
-  border: solid white;
+  border: 2px solid white;  
   border-radius: 30px;
   background-color: lightblue;
   color: black;
+  display: flex;  
+  flex-direction: column;
+  justify-content: space-between;  
+}
+
+.testimonials blockquote {
+  margin: 0 0 20px 0;
+  padding: 0;
   position: relative;
 }
 
-.review1 p {
+.testimonials blockquote p {
   font-style: italic;
-  font-size: smaller;
+  font-size: 1rem;  
+  line-height: 1.6;
+  margin: 0;
 }
 
-.review2 {
-  flex: 1;
-  padding: 20px;
-  border: solid white;
-  border-radius: 30px;
-  background-color: lightblue;
-  color: black;
-  position: relative;
+.testimonials img{
+  height: 50px;
+  width: 50px;
 }
 
-.review2 p {
-  font-style: italic;
-  font-size: smaller;
+/* Footer */
+
+.site-footer {
+  margin-top: 60px;
+  padding: 0 10px 10px;
 }
 
-.review3 {
-  flex: 1;
-  padding: 20px;
-  border: solid white;
-  border-radius: 30px;
-  background-color: lightblue;
-  color: black;
-  position: relative;
-}
-
-.review3 p {
-  font-style: italic;
-  font-size: smaller;
-}
-
-.testimonials footer {
-  text-align: center;
-  padding: 5px;
-  border-top: 2px solid;
-}
-
-.last {
-  margin-top: 40px;
-}
-
-.last p {
+.site-footer p {
+  margin: 0;
   text-align: center;
   border-radius: 10px;
-  padding: 12px;
+  padding: 20px;
   background-color: rgba(37, 90, 108, 0.877);
-  font-size: small;
-  margin-top: 2px;
+  font-size: 0.875rem;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .site-footer {
+    margin-top: 40px;
+  }
+  
+  .site-footer p {
+    padding: 15px 10px;
+    font-size: 0.75rem;
+  }
 }
